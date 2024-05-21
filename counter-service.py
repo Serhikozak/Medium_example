@@ -17,4 +17,6 @@ def read_counter():
         with open(COUNTER_FILE, "r") as f:
             return int(f.read().strip())
     else:
-        return 0    
+        return 0
+
+print("Hello")        
