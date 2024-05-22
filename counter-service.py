@@ -65,11 +65,11 @@ def health_check():
     except Exception as e:
         # Return an unheathy status if any error occurs, e.g. file acces issues.
         return jsonify({"status": "unhealthy", "reason": str(e)}), 500
-if __name__=='__name__':
+if __name__=='__main__':
     # Run the Flask app with binding to all interfaces on port 8080.
     # Debug mode is turned off for production use.
     app.run('0.0.0.0', port=8080, debug=False)
-    
+
      
 
           
